@@ -207,7 +207,7 @@ section {
     animation: professionRotate 13s ease-out infinite;
 }
 
-.h{
+.h {
     line-height: 50px;
 }
 
@@ -498,7 +498,7 @@ span {
     border-radius: .8rem;
     margin: .7rem 0;
     box-shadow: 0 .1rem .5rem var(--shadow-color);
-    
+
 }
 
 .contact form .input-box input {
@@ -673,7 +673,7 @@ img {
         color: var(--text-color);
         margin-bottom: .1rem;
     }
-    
+
     .navbar {
         position: absolute;
         top: 100%;
@@ -756,7 +756,7 @@ img {
     }
 
     .home .profession-box .profession:nth-child(2) {
-        transform: rotate(0deg) translate(0, -325px);
+        transform: rotate(0deg) translate(-25px, -325px);
     }
 
     .home .profession-box .profession:nth-child(3) {
@@ -822,8 +822,8 @@ img {
         font-size: 50%;
     }
 
-    #darkMode-icon {
-        right: 6rem;
+    body {
+        width: 100%;
     }
 
     .home .profession-box .profession:nth-child(1) {
@@ -831,15 +831,15 @@ img {
     }
 
     .home .profession-box .profession:nth-child(2) {
-        transform: rotate(0deg) translate(5px, -325px);
+        transform: rotate(0deg) translate(0px, -325px);
     }
 
     .home .profession-box .profession:nth-child(3) {
-        transform: rotate(90deg) translate(-105px, -440px);
+        transform: rotate(90deg) translate(-140px, -480px);
     }
 
     .home .profession-box .profession:nth-child(4) {
-        transform: rotate(180deg) translate(-210px, -325px);
+        transform: rotate(180deg) translate(-285px, -325px);
     }
 
     .home .profession-container .overlay {
@@ -858,11 +858,16 @@ img {
         text-align: center;
         margin-top: 2rem;
     }
+
 }
 
-@media (max-width: 365px) {
+@media (max-width: 376px) {
     .about-img img {
         width: 90vw;
+    }
+
+    .overlay {
+        padding-bottom: 0px;
     }
 }
 
@@ -874,7 +879,7 @@ img {
 
 @media (max-width: 768px) {
     .home {
-        padding: 10rem 3% 23rem;
+        padding: 5rem 3% 40rem;
         text-align: center;
     }
 
@@ -899,27 +904,25 @@ img {
         transform: none;
         width: auto;
         height: auto;
+        margin-top: 80px;
     }
 
     .profession-box {
         position: relative;
-        margin-top: 3rem;
+        margin-top: 0rem;
     }
 
     .profession {
         flex-direction: row;
-        margin-bottom: 1.5rem;
+        margin-bottom: 0rem;
     }
 
     .profession i {
-        margin-right: 1rem;
-    }
-
-    .circle {
-        display: none;
+        margin-right: 0rem;
     }
 
     .overlay {
-        display: none;
+        padding-bottom: 1px;
     }
+
 }
