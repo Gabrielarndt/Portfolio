@@ -11,6 +11,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+.imge{
+    background-image: url(https://www.instagram.com/p/CbBqqzFtm8Y/?img_index=1);
+}
+
 :root {
     --bg-color: #fdfdfd;
     --text-color: #333;
@@ -661,7 +665,7 @@ img {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
     #menu-icon {
         display: block;
     }
@@ -746,27 +750,6 @@ img {
         left: auto;
         transform-origin: 0;
     }
-
-    .home .profession-box .profession:nth-child(1) {
-        transform: rotate(-90deg) translate(-120px, -210px);
-    }
-
-    .home .profession-box .profession:nth-child(1) i {
-        margin-right: 0;
-    }
-
-    .home .profession-box .profession:nth-child(2) {
-        transform: rotate(0deg) translate(-25px, -325px);
-    }
-
-    .home .profession-box .profession:nth-child(3) {
-        transform: rotate(90deg) translate(-115px, -450px);
-    }
-
-    .home .profession-box .profession:nth-child(4) {
-        transform: rotate(180deg) translate(-220px, -325px);
-    }
-
     .home .profession-box .circle {
         position: fixed;
         width: 670px;
@@ -807,6 +790,13 @@ img {
 
     .testimonial-box .swiper-button-next,
     .testimonial-box .swiper-button-prev {
+        display: none;
+    }
+
+    .circle{
+        display: none;
+    }
+    .overlay{
         display: none;
     }
 }
@@ -919,10 +909,6 @@ img {
 
     .profession i {
         margin-right: 0rem;
-    }
-
-    .overlay {
-        padding-bottom: 1px;
     }
 
 }
