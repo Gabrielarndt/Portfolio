@@ -11,7 +11,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.imge{
+.imge {
     background-image: url(https://www.instagram.com/p/CbBqqzFtm8Y/?img_index=1);
 }
 
@@ -666,6 +666,8 @@ img {
 }
 
 @media (max-width: 769px) {
+   
+
     #menu-icon {
         display: block;
     }
@@ -750,6 +752,7 @@ img {
         left: auto;
         transform-origin: 0;
     }
+
     .home .profession-box .circle {
         position: fixed;
         width: 670px;
@@ -793,10 +796,11 @@ img {
         display: none;
     }
 
-    .circle{
+    .circle {
         display: none;
     }
-    .overlay{
+
+    .overlay {
         display: none;
     }
 }
@@ -856,9 +860,7 @@ img {
         width: 90vw;
     }
 
-    .overlay {
-        padding-bottom: 0px;
-    }
+    
 }
 
 @media (max-width: 315px) {
@@ -894,7 +896,7 @@ img {
         transform: none;
         width: auto;
         height: auto;
-        margin-top: 80px;
+        margin-top: 90px;
     }
 
     .profession-box {
@@ -911,4 +913,53 @@ img {
         margin-right: 0rem;
     }
 
+}
+
+@media (max-width: 769px) {
+
+    /* Adicionando overflow-x: hidden para evitar a rolagem horizontal */
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    /* Ajustando o posicionamento absoluto da .home .profession-container */
+    .home .profession-container {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        height: 100vh;
+        overflow: hidden;
+        pointer-events: none;
+    }
+
+    /* Ajustando o tamanho da .home .profession-box */
+    .home .profession-box {
+        position: absolute;
+        top: 0;
+        right: 0;
+        max-width: 100%;
+        /* Definir a largura máxima para evitar que ultrapasse os limites da tela */
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: professionRotate 13s ease-out infinite;
+    }
+}
+
+/* Adicionando uma classe para evitar a rolagem horizontal */
+.no-overflow-x {
+    overflow-x: hidden;
+    max-width: 100%;
+    margin: 0 auto;
+    /* Isso centralizará o conteúdo na tela */
+}
+
+body {
+    overflow-x: hidden;
+    /* Evita a rolagem horizontal */
+    overflow-y: auto;
+    /* Permite a rolagem vertical se o conteúdo for maior que a tela */
 }
